@@ -20,7 +20,7 @@ use WpifyPluginTutorialDeps\DI\NotFoundException;
 use WpifyPluginTutorial\Plugin;
 use WpifyPluginTutorialDeps\Wpify\Model\Manager;
 
-use function WpifyPluginTutorialDeps\DI\autowire;
+use function WpifyPluginTutorialDeps\DI\create;
 
 require 'deps/scoper-autoload.php';
 require 'deps/autoload.php';
@@ -39,7 +39,7 @@ function wpifypt_container(): Container {
 	if ( empty( $container ) ) {
 		$containerBuilder = new ContainerBuilder();
 		$containerBuilder->addDefinitions( array(
-			Manager::class => autowire()->constructor( array() )
+			Manager::class => create()->constructor( array() )
 		) );
 		$container = $containerBuilder->build();
 	}
