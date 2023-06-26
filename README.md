@@ -1,6 +1,6 @@
 # Example WPify Plugin tutorial
 
-This is an example plugin to demonstrate how we at WPify create plugins. 
+This is an example plugin to demonstrate how we at WPify create plugins.
 
 ## Installation
 
@@ -50,3 +50,6 @@ We have a custom post type, taxonomy, but we have no easy way how to access data
 WPify Models, so we can access data easily and use them wherever we need.
 
 Links: [WPify Model](https://packagist.org/packages/wpify/model)
+
+
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/05-templates)
