@@ -1,6 +1,6 @@
 # Example WPify Plugin tutorial
 
-This is an example plugin to demonstrate how we at WPify create plugins. 
+This is an example plugin to demonstrate how we at WPify create plugins.
 
 ## Installation
 
@@ -36,3 +36,5 @@ links: [WPify Scoper](https://packagist.org/packages/wpify/scoper)
 ```bash
 composer require wpify/scoper
 ```
+
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/03-custom-fields)
