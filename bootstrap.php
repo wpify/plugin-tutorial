@@ -19,11 +19,10 @@ use WpifyPluginTutorialDeps\DI\DependencyException;
 use WpifyPluginTutorialDeps\DI\NotFoundException;
 use WpifyPluginTutorial\Plugin;
 use WpifyPluginTutorialDeps\Wpify\Model\Manager;
-
 use WpifyPluginTutorialDeps\Wpify\PluginUtils\PluginUtils;
 use WpifyPluginTutorialDeps\Wpify\Templates\TwigTemplates;
 use WpifyPluginTutorialDeps\Wpify\Templates\WordPressTemplates;
-use function WpifyPluginTutorialDeps\DI\autowire;
+
 use function WpifyPluginTutorialDeps\DI\create;
 
 require 'deps/scoper-autoload.php';
@@ -50,7 +49,7 @@ function wpifypt_container(): Container {
 			TwigTemplates::class      => create()->constructor( array(
 				plugin_dir_path( __FILE__ ) . 'templates',
 			) ),
-			Manager::class            => autowire()->constructor( array() )
+			Manager::class            => create()->constructor( array() )
 		) );
 		$container = $containerBuilder->build();
 	}
