@@ -15,12 +15,17 @@ the advanced techniques of creating a plugin.
 
 ## Steps:
 
-### 01 - PHP/DI
+### 01 - Basic concepts - OOP, Namespaces, Composer, Dependency Injection
 
-in this step, we will add PHP-DI to the plugin. This will allow us to use dependency injection in our plugin.
-Also, the basic structure of the plugin will be created.
+Let's start with building the basic plugin structure using OOP, Namespaces, Composer and Dependency Injection.
 
-Links: [PHP/DI](https://php-di.org/)
+Links:
+
+* [Object oriented programming - OOP](https://www.phptutorial.net/php-oop/)
+* [Namespaces](https://www.phptutorial.net/php-oop/php-namespace/)
+* [Composer](https://getcomposer.org/doc/01-basic-usage.md)
+* [Understanding Dependency Injection](https://php-di.org/doc/understanding-di.html)
+* DI Containers - [PHP/DI](https://php-di.org/), [Symfony DI](https://symfony.com/doc/current/components/dependency_injection.html), [League](https://container.thephpleague.com/), [Nette](https://doc.nette.org/en/dependency-injection/container), [Dice](https://github.com/Level-2/Dice)
 
 ```bash
 composer require php-di/php-di
