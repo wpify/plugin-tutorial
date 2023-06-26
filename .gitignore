@@ -5,3 +5,4 @@
 .DS_Store
 composer.lock
 composer-deps.lock
+package-lock.json
