@@ -36,3 +36,11 @@ links: [WPify Scoper](https://packagist.org/packages/wpify/scoper)
 ```bash
 composer require wpify/scoper
 ```
+
+### 03 - WPify Custom Fields
+
+In this step, we are adding the WPify Custom Fields to the plugin, so that we can easily create custom fields for our
+plugin. Custom fields are required in composer-deps.json file.
+
+links: [WPify Custom Fields](https://packagist.org/packages/wpify/custom-fields)
+
