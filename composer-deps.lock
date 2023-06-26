@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a20c9b9908b14a8f947bce800a942c4e",
+    "content-hash": "ee4cafd1d9df136a7753123c14675bee",
     "packages": [
         {
             "name": "laravel/serializable-closure",
@@ -484,6 +484,38 @@
             "time": "2023-06-08T12:52:13+00:00"
         },
         {
+            "name": "wpify/asset",
+            "version": "1.2.7",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:wpify/asset.git",
+                "reference": "6bc587810b33e47a86120cf2897790454d0ade38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fasset/repository/archive.zip?sha=6bc587810b33e47a86120cf2897790454d0ade38",
+                "reference": "6bc587810b33e47a86120cf2897790454d0ade38",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wpify\\Asset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WPify",
+                    "email": "info@wpify.io"
+                }
+            ],
+            "time": "2022-11-16T19:05:58+00:00"
+        },
+        {
             "name": "wpify/custom-fields",
             "version": "3.9.6",
             "source": {
@@ -555,6 +587,42 @@
             ],
             "description": "WPify Model",
             "time": "2023-06-16T12:06:42+00:00"
+        },
+        {
+            "name": "wpify/plugin-utils",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/wpify/plugin-utils.git",
+                "reference": "0ace7f3a23bdfe3e2b2b05c72af79fa034c7e77a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fplugin-utils/repository/archive.zip?sha=0ace7f3a23bdfe3e2b2b05c72af79fa034c7e77a",
+                "reference": "0ace7f3a23bdfe3e2b2b05c72af79fa034c7e77a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wpify\\PluginUtils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WPify",
+                    "email": "info@wpify.io"
+                }
+            ],
+            "description": "WPify Plugin Utilities",
+            "support": {
+                "issues": "https://gitlab.com/api/v4/projects/29460480/issues"
+            },
+            "time": "2021-09-10T12:09:45+00:00"
         },
         {
             "name": "wpify/templates",

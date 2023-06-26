@@ -1,3 +1,5 @@
+/build/
 /deps/
+/node_modules/
 /vendor/
 .DS_Store
