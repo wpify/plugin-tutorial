@@ -50,3 +50,10 @@ We have a custom post type, taxonomy, but we have no easy way how to access data
 WPify Models, so we can access data easily and use them wherever we need.
 
 Links: [WPify Model](https://packagist.org/packages/wpify/model)
+
+### 05 - WPify Templates
+
+We want to be able to render templates easily, even in Twig. In this step, we are adding WPify Templates.
+
+Links: [WPify Templates](https://packagist.org/packages/wpify/templates)
+
