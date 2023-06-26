@@ -31,7 +31,7 @@ composer require php-di/php-di
 In this step, we are adding the WPify Scoper to the plugin, so that the dependencies are not conflicting with other
 plugins.
 
-links: [WPify Scoper](https://packagist.org/packages/wpify/scoper)
+Links: [WPify Scoper](https://packagist.org/packages/wpify/scoper)
 
 ```bash
 composer require wpify/scoper
@@ -42,10 +42,11 @@ composer require wpify/scoper
 In this step, we are adding the WPify Custom Fields to the plugin, so that we can easily create custom fields for our
 plugin. Custom fields are required in composer-deps.json file.
 
-links: [WPify Custom Fields](https://packagist.org/packages/wpify/custom-fields)
+Links: [WPify Custom Fields](https://packagist.org/packages/wpify/custom-fields)
 
 ### 04 - WPify Model
 
 We have a custom post type, taxonomy, but we have no easy way how to access data. In this step, we are adding 
 WPify Models, so we can access data easily and use them wherever we need.
 
+Links: [WPify Model](https://packagist.org/packages/wpify/model)
