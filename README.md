@@ -1,6 +1,6 @@
 # Example WPify Plugin tutorial
 
-This is an example plugin to demonstrate how we at WPify create plugins. 
+This is an example plugin to demonstrate how we at WPify create plugins.
 
 ## Installation
 
@@ -57,3 +57,5 @@ We want to be able to render templates easily, even in Twig. In this step, we ar
 
 Links: [WPify Templates](https://packagist.org/packages/wpify/templates)
 
+
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/06-assets-utils)
