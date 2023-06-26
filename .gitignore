@@ -1,3 +1,5 @@
 /deps/
 /vendor/
 .DS_Store
+composer.lock
+composer-deps.lock
