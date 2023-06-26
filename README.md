@@ -1,6 +1,6 @@
 # Example WPify Plugin tutorial
 
-This is an example plugin to demonstrate how we at WPify create plugins. 
+This is an example plugin to demonstrate how we at WPify create plugins.
 
 ## Installation
 
@@ -25,3 +25,5 @@ Links: [PHP/DI](https://php-di.org/)
 ```bash
 composer require php-di/php-di
 ```
+
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/02-scoper)
