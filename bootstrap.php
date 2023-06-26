@@ -13,12 +13,14 @@
  * Domain Path:       /languages
 */
 
-use DI\Container;
-use DI\ContainerBuilder;
-use DI\DependencyException;
-use DI\NotFoundException;
+use WpifyPluginTutorialDeps\DI\Container;
+use WpifyPluginTutorialDeps\DI\ContainerBuilder;
+use WpifyPluginTutorialDeps\DI\DependencyException;
+use WpifyPluginTutorialDeps\DI\NotFoundException;
 use WpifyPluginTutorial\Plugin;
 
+require 'deps/scoper-autoload.php';
+require 'deps/autoload.php';
 require 'vendor/autoload.php';
 
 /**

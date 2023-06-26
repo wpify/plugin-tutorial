@@ -23,3 +23,14 @@ Also, the basic structure of the plugin will be created.
 ```bash
 composer require php-di/php-di
 ```
+
+### 02 - WPify Scoper
+
+In this step, we are adding the WPify Scoper to the plugin, so that the dependencies are not conflicting with other
+plugins.
+
+links: [WPify Scoper](https://packagist.org/packages/wpify/scoper)
+
+```bash
+composer require wpify/scoper
+```
