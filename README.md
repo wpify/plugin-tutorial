@@ -14,4 +14,4 @@ The aim is to create simple plugin that stores information about books and their
 the advanced techniques of creating a plugin.
 
 
-[Next step](https://github.com/wpify/plugin-tutorial/tree/01-basics-php-di)
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/01-basics-php-di)
