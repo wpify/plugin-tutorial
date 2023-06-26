@@ -49,3 +49,6 @@ links: [WPify Custom Fields](https://packagist.org/packages/wpify/custom-fields)
 We have a custom post type, taxonomy, but we have no easy way how to access data. In this step, we are adding 
 WPify Models, so we can access data easily and use them wherever we need.
 
+### 05 - WPify Templates
+
+We want to be able to render templates easily, even in Twig. In this step, we are adding WPify Templates.

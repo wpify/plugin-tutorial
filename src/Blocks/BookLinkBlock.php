@@ -5,6 +5,8 @@ namespace WpifyPluginTutorial\Blocks;
 use WpifyPluginTutorial\Managers\BlocksManager;
 use WpifyPluginTutorial\Repositories\BookRepository;
 use WpifyPluginTutorialDeps\Wpify\CustomFields\CustomFields;
+use WpifyPluginTutorialDeps\Wpify\Templates\TwigTemplates;
+use WpifyPluginTutorialDeps\Wpify\Templates\WordPressTemplates;
 
 class BookLinkBlock {
 	const KEY = 'wpify/book-link';
@@ -12,6 +14,8 @@ class BookLinkBlock {
 	public function __construct(
 		CustomFields $custom_fields,
 		private BookRepository $book_repository,
+		private WordPressTemplates $wp_template,
+//		private TwigTemplates $twig_template,
 	) {
 		$custom_fields->create_gutenberg_block( array(
 			'name'            => self::KEY,
@@ -46,6 +50,7 @@ class BookLinkBlock {
 		$block_attributes['isbn']  = $book->isbn;
 
 		// return the string with the rendered block.
-		return '<h1 id="' . $block_attributes['anchor'] . '">Book: ' . $block_attributes['title'] . ' (' . $block_attributes['isbn'] . ')</h1>';
+		return $this->wp_template->render( 'blocks/book-link', null, $block_attributes );
+//		return $this->twig_template->render( 'blocks/book-link.twig', null, $block_attributes );
 	}
 }
