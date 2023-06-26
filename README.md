@@ -1,6 +1,6 @@
 # Example WPify Plugin tutorial
 
-This is an example plugin to demonstrate how we at WPify create plugins. 
+This is an example plugin to demonstrate how we at WPify create plugins.
 
 ## Installation
 
@@ -44,3 +44,5 @@ plugin. Custom fields are required in composer-deps.json file.
 
 links: [WPify Custom Fields](https://packagist.org/packages/wpify/custom-fields)
 
+
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/04-models)
