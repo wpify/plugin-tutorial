@@ -61,3 +61,8 @@ Links: [WPify Templates](https://packagist.org/packages/wpify/templates)
 
 Now we have a plugin with custom block, but we need to add some scripts and styles to the plugin. In this step, we are
 adding WordPress Scripts and WPify Plugin Utils.
+
+Links: 
+[WordPress Scripts](https://www.npmjs.com/package/@wordpress/scripts), 
+[WPify Plugin Utils](https://packagist.org/packages/wpify/plugin-utils), 
+[WPify Asset](https://packagist.org/packages/wpify/asset)
