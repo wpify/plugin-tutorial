@@ -10,4 +10,5 @@ This is an example plugin to demostrate how we at WPify create plugins.
 
 ## The goal of the plugin
 
-The aim is to create an
+The aim is to create simple plugin that stores information about books and their authors. On this, we demonstrate
+the advanced techniques of creating a plugin.
