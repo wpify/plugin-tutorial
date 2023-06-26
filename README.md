@@ -1,6 +1,6 @@
 # Example WPify Plugin tutorial
 
-This is an example plugin to demostrate how we at WPify create plugins. 
+This is an example plugin to demonstrate how we at WPify create plugins. 
 
 ## Installation
 
@@ -19,6 +19,8 @@ the advanced techniques of creating a plugin.
 
 in this step, we will add PHP/DI to the plugin. This will allow us to use dependency injection in our plugin.
 Also, the basic structure of the plugin will be created.
+
+Links: [PHP/DI](https://php-di.org/)
 
 ```bash
 composer require php-di/php-di
