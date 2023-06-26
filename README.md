@@ -1,6 +1,6 @@
 # Example WPify Plugin tutorial
 
-This is an example plugin to demonstrate how we at WPify create plugins. 
+This is an example plugin to demonstrate how we at WPify create plugins.
 
 ## Installation
 
@@ -66,3 +66,5 @@ Links:
 [WordPress Scripts](https://www.npmjs.com/package/@wordpress/scripts), 
 [WPify Plugin Utils](https://packagist.org/packages/wpify/plugin-utils), 
 [WPify Asset](https://packagist.org/packages/wpify/asset)
+
+[Next step >>>](https://gitlab.com/wpify/bedrock-skeleton)
