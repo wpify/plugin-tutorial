@@ -54,3 +54,6 @@ Links: [WPify Model](https://packagist.org/packages/wpify/model)
 ### 05 - WPify Templates
 
 We want to be able to render templates easily, even in Twig. In this step, we are adding WPify Templates.
+
+Links: [WPify Templates](https://packagist.org/packages/wpify/templates)
+
