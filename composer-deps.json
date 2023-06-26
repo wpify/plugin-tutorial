@@ -2,6 +2,7 @@
     "require": {
         "php": "^8.0",
         "php-di/php-di": "^7.0",
-        "wpify/custom-fields": "^3.9"
+        "wpify/custom-fields": "^3.9",
+        "wpify/model": "^4.0"
     }
 }

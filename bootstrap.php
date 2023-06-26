@@ -18,6 +18,9 @@ use WpifyPluginTutorialDeps\DI\ContainerBuilder;
 use WpifyPluginTutorialDeps\DI\DependencyException;
 use WpifyPluginTutorialDeps\DI\NotFoundException;
 use WpifyPluginTutorial\Plugin;
+use WpifyPluginTutorialDeps\Wpify\Model\Manager;
+
+use function WpifyPluginTutorialDeps\DI\autowire;
 
 require 'deps/scoper-autoload.php';
 require 'deps/autoload.php';
@@ -35,7 +38,9 @@ function wpifypt_container(): Container {
 
 	if ( empty( $container ) ) {
 		$containerBuilder = new ContainerBuilder();
-		$containerBuilder->addDefinitions( array() );
+		$containerBuilder->addDefinitions( array(
+			Manager::class => autowire()->constructor( array() )
+		) );
 		$container = $containerBuilder->build();
 	}
 
@@ -90,8 +95,10 @@ function wpifypt_uninstall(): void {
 	wpifypt()->uninstall();
 }
 
+/**
+ * Hook basic stuff, so the plugin can work.
+ */
 add_action( 'plugins_loaded', 'wpifypt' );
-
 register_activation_hook( __FILE__, 'wpifypt_activate' );
 register_deactivation_hook( __FILE__, 'wpifypt_deactivate' );
 register_uninstall_hook( __FILE__, 'wpifypt_uninstall' );

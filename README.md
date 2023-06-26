@@ -44,3 +44,8 @@ plugin. Custom fields are required in composer-deps.json file.
 
 links: [WPify Custom Fields](https://packagist.org/packages/wpify/custom-fields)
 
+### 04 - WPify Model
+
+We have a custom post type, taxonomy, but we have no easy way how to access data. In this step, we are adding 
+WPify Models, so we can access data easily and use them wherever we need.
+

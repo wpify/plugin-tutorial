@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d666c7053a321f1611c3044d5ded1cf",
+    "content-hash": "6d884eae86a1f3ed0623884da32887a9",
     "packages": [
         {
             "name": "laravel/serializable-closure",
@@ -283,6 +283,42 @@
             ],
             "description": "WPify Custom Fields",
             "time": "2023-06-15T19:37:40+00:00"
+        },
+        {
+            "name": "wpify/model",
+            "version": "4.0.6",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:wpify/model.git",
+                "reference": "8109864e25436d36fa4008c64dca71b13ff832f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/wpify%2Fmodel/repository/archive.zip?sha=8109864e25436d36fa4008c64dca71b13ff832f2",
+                "reference": "8109864e25436d36fa4008c64dca71b13ff832f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wpify\\Model\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Mejta",
+                    "email": "daniel@mejta.net"
+                }
+            ],
+            "description": "WPify Model",
+            "time": "2023-06-16T12:06:42+00:00"
         }
     ],
     "packages-dev": [],
