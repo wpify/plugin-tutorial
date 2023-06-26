@@ -30,3 +30,5 @@ Links:
 ```bash
 composer require php-di/php-di
 ```
+
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/02-scoper)
