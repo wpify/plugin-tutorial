@@ -11,7 +11,7 @@ if ( ! $title ) {
 	return;
 }
 ?>
-<h1<?= $id ? 'id="' . esc_attr( $id ) . '"' : '' ?>>
+<h1<?= $id ? 'id="' . esc_attr( $id ) . '"' : '' ?> class="book-link">
 	<?php
 	echo esc_html( $title );
 

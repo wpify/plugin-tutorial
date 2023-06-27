@@ -20,6 +20,7 @@ class Plugin {
 		TaxonomiesManager $taxonomies_manager,
 		BlocksManager $blocks_manager,
 		RepositoriesManager $repositories_manager,
+		Frontend $frontend,
 	) {
 		// stuff to do on plugin load
 	}

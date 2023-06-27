@@ -4,6 +4,8 @@
         "php-di/php-di": "^7.0",
         "wpify/custom-fields": "^3.9",
         "wpify/model": "^4.0",
-        "wpify/templates": "^3.0"
+        "wpify/templates": "^3.0",
+        "wpify/plugin-utils": "^1.0",
+        "wpify/asset": "^1.2"
     }
 }

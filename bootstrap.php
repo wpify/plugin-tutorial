@@ -19,6 +19,7 @@ use WpifyPluginTutorialDeps\DI\DependencyException;
 use WpifyPluginTutorialDeps\DI\NotFoundException;
 use WpifyPluginTutorial\Plugin;
 use WpifyPluginTutorialDeps\Wpify\Model\Manager;
+use WpifyPluginTutorialDeps\Wpify\PluginUtils\PluginUtils;
 use WpifyPluginTutorialDeps\Wpify\Templates\TwigTemplates;
 use WpifyPluginTutorialDeps\Wpify\Templates\WordPressTemplates;
 
@@ -41,6 +42,7 @@ function wpifypt_container(): Container {
 	if ( empty( $container ) ) {
 		$containerBuilder = new ContainerBuilder();
 		$containerBuilder->addDefinitions( array(
+			PluginUtils::class        => create()->constructor( __FILE__ ),
 			WordPressTemplates::class => create()->constructor( array(
 				plugin_dir_path( __FILE__ ) . 'templates',
 			) ),
