@@ -4,6 +4,7 @@ namespace WpifyPluginTutorial;
 
 use WpifyPluginTutorial\Managers\BlocksManager;
 use WpifyPluginTutorial\Managers\PostTypesManager;
+use WpifyPluginTutorial\Managers\RepositoriesManager;
 use WpifyPluginTutorial\Managers\TaxonomiesManager;
 
 /**
@@ -18,6 +19,7 @@ class Plugin {
 		PostTypesManager $post_types_manager,
 		TaxonomiesManager $taxonomies_manager,
 		BlocksManager $blocks_manager,
+		RepositoriesManager $repositories_manager,
 	) {
 		// stuff to do on plugin load
 	}
