@@ -31,4 +31,15 @@ Links:
 composer require php-di/php-di
 ```
 
-[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/02-scoper)
+### 02 - WPify Scoper
+
+In this step, we are adding the WPify Scoper to the plugin, so that the dependencies are not conflicting with other
+plugins.
+
+links: [WPify Scoper](https://packagist.org/packages/wpify/scoper)
+
+```bash
+composer require wpify/scoper
+```
+
+[Next step >>>](https://github.com/wpify/plugin-tutorial/tree/03-custom-fields)

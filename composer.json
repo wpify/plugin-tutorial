@@ -14,7 +14,19 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "php-di/php-di": "^7.0"
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "wpify/scoper": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "wpify/scoper": true
+        }
+    },
+    "extra": {
+        "wpify-scoper": {
+            "prefix": "WpifyPluginTutorialDeps"
+        }
     }
 }
