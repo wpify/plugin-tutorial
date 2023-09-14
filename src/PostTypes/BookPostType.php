@@ -3,12 +3,33 @@
 namespace WpifyPluginTutorial\PostTypes;
 
 use WpifyPluginTutorial\Taxonomies\BookAuthorTaxonomy;
+use WpifyPluginTutorialDeps\Wpify\CustomFields\CustomFields;
 
 class BookPostType {
 	const KEY = 'book';
 
-	public function __construct() {
+	public function __construct( CustomFields $custom_fields ) {
 		add_action( 'init', array( $this, 'register' ), 0 );
+
+		$custom_fields->create_metabox( array(
+			'id'         => 'book-info',
+			'title'      => __( 'Book info', 'wpifypt' ),
+			'context'    => 'advanced',
+			'priority'   => 'high',
+			'items'      => array(
+				array(
+					'id'    => 'isbn',
+					'type'  => 'text',
+					'label' => __( 'ISBN', 'wpifypt' ),
+				),
+				array(
+					'id'    => 'first_published',
+					'type'  => 'date',
+					'label' => __( 'Published first', 'wpifypt' ),
+				),
+			),
+			'post_types' => array( self::KEY ),
+		) );
 	}
 
 	public function register() {

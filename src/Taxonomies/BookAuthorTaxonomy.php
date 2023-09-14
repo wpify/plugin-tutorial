@@ -3,16 +3,33 @@
 namespace WpifyPluginTutorial\Taxonomies;
 
 use WpifyPluginTutorial\PostTypes\BookPostType;
+use WpifyPluginTutorialDeps\Wpify\CustomFields\CustomFields;
 
 class BookAuthorTaxonomy {
 	const KEY = 'book_author';
 
-	public function __construct() {
+	public function __construct( CustomFields $custom_fields ) {
 		add_action( 'init', array( $this, 'register' ) );
+
+		$custom_fields->create_taxonomy_options( array(
+			'taxonomy' => self::KEY,
+			'items'    => array(
+				array(
+					'id'    => 'date_of_birth',
+					'type'  => 'date',
+					'label' => __( 'Date of Birth', 'wpifypt' ),
+				),
+				array(
+					'id'    => 'date_of_death',
+					'type'  => 'date',
+					'label' => __( 'Date of Death', 'wpifypt' ),
+				),
+			),
+		) );
 	}
 
 	public function register() {
-		$labels  = array(
+		$labels = array(
 			'name'                       => _x( 'Book Authors', 'Taxonomy General Name', 'wpifypt' ),
 			'singular_name'              => _x( 'Book Author', 'Taxonomy Singular Name', 'wpifypt' ),
 			'menu_name'                  => __( 'Book Author', 'wpifypt' ),
@@ -41,7 +58,7 @@ class BookAuthorTaxonomy {
 			'hierarchical' => false,
 		);
 
-		$args    = array(
+		$args = array(
 			'labels'            => $labels,
 			'hierarchical'      => false,
 			'public'            => true,

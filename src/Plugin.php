@@ -2,6 +2,7 @@
 
 namespace WpifyPluginTutorial;
 
+use WpifyPluginTutorial\Managers\BlocksManager;
 use WpifyPluginTutorial\Managers\PostTypesManager;
 use WpifyPluginTutorial\Managers\TaxonomiesManager;
 
@@ -16,6 +17,7 @@ class Plugin {
 	public function __construct(
 		PostTypesManager $post_types_manager,
 		TaxonomiesManager $taxonomies_manager,
+		BlocksManager $blocks_manager,
 	) {
 		// stuff to do on plugin load
 	}
